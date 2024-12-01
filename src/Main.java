@@ -1,17 +1,50 @@
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
 public class Main {
     public static void main(String[] args) {
-        // Press Alt+Enter with your caret at the highlighted text to see how
-        // IntelliJ IDEA suggests fixing it.
-        System.out.print("Hello and welcome!");
+    KruBa Orahun = new KruBa("Orahun");
+    Orahun.ShowStat();
+    NakDab MooDeng = new NakDab("MooDeng");
+    MooDeng.ShowStat();
 
-        // Press Shift+F10 or click the green arrow button in the gutter to run the code.
-        for (int i = 1; i <= 5; i++) {
+//    System.out.println();
+//    System.out.println("Buy Accessories. But can't afford it, lol.");
+//    System.out.println();
+//    Orahun.BuyArmour();
+//    MooDeng.BuyRune();
+//    Orahun.ShowStat();
+//    MooDeng.ShowStat();
 
-            // Press Shift+F9 to start debugging your code. We have set one breakpoint
-            // for you, but you can always add more by pressing Ctrl+F8.
-            System.out.println("i = " + i);
-        }
+    System.out.println();
+    System.out.println("Base Action and Level UP");
+    System.out.println();
+
+    Orahun.TakeDamage(MooDeng.Attack());
+//    Orahun.ShowStat();
+//    MooDeng.ShowStat();
+
+//    System.out.println();
+//    System.out.println("Level UP MooDeng");
+//    System.out.println();
+    Orahun.TakeDamage(MooDeng.Attack());
+    Orahun.ShowStat();
+    MooDeng.ShowStat();
+
+    System.out.println();
+    System.out.println("Buy MooDeng Rune and Equip");
+    System.out.println();
+    MooDeng.BuyRune();
+    MooDeng.ShowStat();
+
+    System.out.println();
+    System.out.println("Orahun turn");
+    System.out.println();
+    MooDeng.TakeDamage(Orahun.Attack());
+    MooDeng.TakeDamage(Orahun.Attack());
+    Orahun.ShowStat();
+    System.out.println();
+    System.out.println("Orahun Buy Armour and Equip");
+    System.out.println();
+    Orahun.BuyArmour();
+    Orahun.ShowStat();
+
     }
 }
